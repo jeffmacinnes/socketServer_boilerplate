@@ -1,0 +1,23 @@
+{
+  "name": "frontendtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "watchify js/main.js -t [ babelify --presets [ @babel/preset-env ] ] -o bundle.js --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0"
+  },
+  "dependencies": {
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "watchify": "^3.11.1"
+  }
+}
